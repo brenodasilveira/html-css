@@ -1,0 +1,169 @@
+:root {
+ --bg: #0b0f12;
+ --bg-2: #0f1418;
+ --surface: #0f1720;
+ --muted: rgba(255, 255, 255, 0.55);
+ --text: #e6eef3;
+ --accent: #2fa4c9;
+ --accent-strong: #238aae;
+ --border: rgba(255, 255, 255, 0.06);
+ --glass: rgba(255, 255, 255, 0.02);
+ --radius: 10px;
+ --transition: 200ms ease
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, var(--bg), var(--bg-2));
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 18px;
+}
+
+.card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid var(--border);
+    padding: 28px;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 24px rgba(2, 6, 23, 0.6);
+}
+
+.card h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 13px;
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 14px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    outline: none;
+    transition: box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{color: rgba(230, 230, 243, 0.45)}
+.input-group input:focus,
+.input-group textarea:focus{box-shadow: 0 4px 18px rgba(47, 164, 201, 0.08); border-color: var(--accent)}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 9px;
+    border: none;
+    background: var(--accent);
+    color: #061018;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+}
+
+button:hover {
+    background: var(--accent-strong);
+    transform: translateY(-1px);
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 19px 14px;
+    border-radius: 8px;
+}
+
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.login-link a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a: hover {text-decoration: underline}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px dashed var(--border);
+    color: var(--muted);
+}
+
+th {
+    color: var(--text);
+    text-align: left;
+}
+
+.card small {
+    color: var(--muted)
+}
+
+/* responsividade */
+@media (max-width:420px){.container{padding: 8px}.card {padding: 18px}.card h2 {font-size: 18px}}
+
+button: focus,.input-group input:focus{box-shadow:0 0 0 4px rgba(47, 164, 201, 0.08)}
+
+
+
+

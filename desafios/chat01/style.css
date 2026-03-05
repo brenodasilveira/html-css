@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #2563EB;
+    --cor2: #06B6D4;
+    --cor3: #F1F5F9;
+    --cor4: #0F172A;
+    --cor5: #1E293B;
+
+    --fonte-padrao: 'Inter', sans-serif;
+    --fonte-titulo: 'Space Grotesque', sans-serif;
+}
+
+h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+}
+
+
+header {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    padding-top: 30px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    color: #FFFFFF;
+    text-shadow: 2px 2px 8px #000000d9;
+}
+
+header p {
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: #ffffffec;
+    text-shadow: 2px 2px 8px #000000d9;
+}
+
+nav {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 20px;
+    font-weight: 500;
+    padding: 8px 14px;
+}
+
+nav > a:hover {
+    transition: 0.3s;
+    text-decoration: underline;
+    background-color: #12337a;
+    border-radius: 12px;
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    text-align: left;
+    margin: auto;
+    margin-top: 0px;
+    padding: 30px;
+    box-shadow: 4px 4px 4px #000000a4;
+}
+
+main h2 {
+    color: var(--cor4);
+    font-family: var(--fonte-titulo);
+}
+
+main h3 {
+    color: var(--cor5);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+main p {
+    color: var(--cor5)
+}
+
+main ul {
+    list-style-position: inside;
+}
+
+img#computador {
+    height: 80px;
+    width: 80px;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    background-color: #575757;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+}
