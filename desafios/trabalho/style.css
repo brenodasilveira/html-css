@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(146, 146, 146);
+}
+
+p {
+    text-align: justify;
+}
+
+.componentes {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
